@@ -25,8 +25,9 @@ var Age = exports.Age = function () {
     key: "secondConverter",
     value: function secondConverter(theInputtedThing) {
       var today = new Date();
+      var input = new Date(theInputtedThing);
       var todaysSeconds = today.getTime();
-      var datesSeconds = theInputtedThing.getTime();
+      var datesSeconds = input.getTime();
       var totalSeconds = (todaysSeconds - datesSeconds) / 1000;
       return totalSeconds;
     }

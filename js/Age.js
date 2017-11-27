@@ -9,8 +9,9 @@ export class Age {
   }
   secondConverter(theInputtedThing) {
     const today = new Date();
+    let input = new Date(theInputtedThing);
     let todaysSeconds = today.getTime();
-    let datesSeconds = theInputtedThing.getTime();
+    let datesSeconds = input.getTime();
     let totalSeconds = (todaysSeconds - datesSeconds)/1000;
     return (totalSeconds);
   }
