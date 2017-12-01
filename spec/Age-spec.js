@@ -60,13 +60,13 @@ describe('ageChecker', function(){
   });
 });
 describe('mercuryConverter', function(){
-  it('should return 85 years', function(){
+  it('should return 86 years', function(){
     const newDate = new Date();
     newDate.setYear(1997);
     newDate.setMonth(3);
     newDate.setDate(8);
     const newAge = new Age();
-    const expected = 85;
+    const expected = 86;
     newAge.mercuryConverter(newDate)
     expect(newAge.mercury).toEqual(expected);
   });
@@ -108,13 +108,13 @@ describe('jupiterConverter', function(){
   });
 });
 describe('yearsToLive', function(){
-  it('should return 269 years', function(){
+  it('should return 268 years', function(){
     const newDate = new Date();
     newDate.setYear(1997);
     newDate.setMonth(3);
     newDate.setDate(8);
     const newAge = new Age();
-    const expected = 269;
+    const expected = 268;
     newAge.mercuryConverter(newDate)
     expect(newAge.yearsToLive("Mercury")).toEqual(expected);
   });
