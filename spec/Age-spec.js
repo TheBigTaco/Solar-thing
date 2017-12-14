@@ -84,13 +84,13 @@ describe('venusConverter', function(){
   });
 });
 describe('marsConverter', function(){
-  it('should return 10 years', function(){
+  it('should return 11 years', function(){
     const newDate = new Date();
     newDate.setYear(1997);
     newDate.setMonth(3);
     newDate.setDate(8);
     const newAge = new Age();
-    const expected = 10;
+    const expected = 11;
     newAge.marsConverter(newDate)
     expect(newAge.mars).toEqual(expected);
   });
@@ -132,13 +132,13 @@ describe('yearsToLive', function(){
   });
 });
 describe('yearsToLive', function(){
-  it('should return 35 years', function(){
+  it('should return 34 years', function(){
     const newDate = new Date();
     newDate.setYear(1997);
     newDate.setMonth(3);
     newDate.setDate(8);
     const newAge = new Age();
-    const expected = 35;
+    const expected = 34;
     newAge.marsConverter(newDate)
     expect(newAge.yearsToLive("Mars")).toEqual(expected);
   });
